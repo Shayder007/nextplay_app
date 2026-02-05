@@ -2,7 +2,7 @@
 
 **NextPlay** é um aplicativo mobile desenvolvido com **Flutter** para visualização e avaliação de um catálogo de jogos. O app consome uma API FastAPI e oferece uma interface moderna para explorar jogos, ver detalhes, avaliações e comentários.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - **Exploração de Jogos**: Lista completa de jogos com paginação e carregamento eficiente.
 - **Busca Avançada com Filtros**: 
@@ -13,7 +13,7 @@
 - **Avaliações e Comentários**: Sistema completo para visualizar reviews e feedbacks de outros usuários.
 - **Design Moderno (Dark Mode)**: Interface premium com tema escuro, tipografia Poppins e micro-animações.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Flutter**: Framework UI para desenvolvimento nativo multiplataforma.
 - **Riverpod**: Gerenciamento de estado reativo de alto desempenho (usado para filtros em tempo real).
@@ -21,7 +21,7 @@
 - **Google Fonts (Poppins)**: Tipografia moderna e elegante.
 - **Clean Architecture (Feature-based)**: Arquitetura focada em separação de responsabilidades (Data, Presentation, Providers).
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 lib/
@@ -34,7 +34,7 @@ lib/
 └── main.dart           # Inicialização e configuração do tema
 ```
 
-## ⚙️ Configuração e Execução
+## Configuração e Execução
 
 ### Pré-requisitos
 - Flutter SDK (^3.10.4)
@@ -58,4 +58,4 @@ Este app foi projetado para trabalhar em conjunto com a **Game Catalog API**. A 
 
 ---
 
-Desenvolvido com ❤️ por Shyader.🚀
+Desenvolvido por Shayder.
