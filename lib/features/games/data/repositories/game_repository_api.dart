@@ -38,4 +38,13 @@ class GameRepositoryApi implements GameRepository {
         .map((json) => CommentModel.fromJson(json))
         .toList();
   }
+
+  @override
+  Future<void> addComment(int gameId, String nome, String texto) async {
+    await _dio.post('/comentarios', data: {
+      'jogo_id': gameId,
+      'autor_nome': nome,
+      'texto': texto,
+    });
+  }
 }

@@ -23,9 +23,44 @@ class GamesPage extends ConsumerWidget {
               final game = games[index];
 
               return Card(
+                elevation: 2,
+                margin: const EdgeInsets.symmetric(vertical: 4),
                 child: ListTile(
-                  title: Text(game.nome), // SOMENTE O NOME
-                  trailing: const Icon(Icons.arrow_forward_ios),
+                  leading: game.imagemUrl != null
+                      ? ClipRRect(
+                          borderRadius: BorderRadius.circular(4),
+                          child: Image.network(
+                            game.imagemUrl!,
+                            width: 50,
+                            height: 50,
+                            fit: BoxFit.cover,
+                            errorBuilder: (_, __, ___) => const Icon(Icons.gamepad),
+                          ),
+                        )
+                      : const Icon(Icons.gamepad),
+                  title: Text(
+                    game.nome,
+                    style: const TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  subtitle: Text(
+                    '${game.plataforma} • ${game.genero}',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  trailing: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text(
+                        game.preco == 0 ? 'Grátis' : 'R\$ ${game.preco.toStringAsFixed(2)}',
+                        style: const TextStyle(
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const Icon(Icons.arrow_forward_ios, size: 14, color: Colors.grey),
+                    ],
+                  ),
                   onTap: () {
                     Navigator.push(
                       context,

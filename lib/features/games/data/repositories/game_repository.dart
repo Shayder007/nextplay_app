@@ -6,4 +6,5 @@ abstract class GameRepository {
   Future<List<GameModel>> getGames();
   Future<List<ReviewModel>> getReviews(int gameId);
   Future<List<CommentModel>> getComments(int gameId);
+  Future<void> addComment(int gameId, String nome, String texto);
 }
