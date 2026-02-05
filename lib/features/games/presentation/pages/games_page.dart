@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../providers/game_provider.dart';
 import 'game_details_page.dart';
+import 'search_games_page.dart';
 
 class GamesPage extends ConsumerWidget {
   const GamesPage({super.key});
@@ -14,6 +15,17 @@ class GamesPage extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Next play'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const SearchGamesPage()),
+              );
+            },
+          ),
+        ],
       ),
       body: gamesAsync.when(
         data: (games) {
