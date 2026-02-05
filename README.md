@@ -3,7 +3,8 @@
 Projeto em flutter de um app de avaliacao de jogos
 
 ## Getting Started
-
+#link do dockerhub
+-https://hub.docker.com/repository/docker/shayderfaustino/api-for-game-catalog-api/general
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
