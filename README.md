@@ -55,7 +55,10 @@ lib/
 
 ## 🐳 Integração com o Backend
 Este app foi projetado para trabalhar em conjunto com a **Game Catalog API**. A API suporta persistência via SQLite em volumes Docker, garantindo que suas avaliações e novos jogos sejam salvos permanentemente.
-
+## Link da imagem docker no dockerhub
+```
+https://hub.docker.com/repository/docker/shayderfaustino/game-catalog-api/general
+```
 ---
 
 Desenvolvido por Shayder.
